@@ -3,12 +3,19 @@ import React from 'react';
 class ScrollView extends React.Component {
   // Draw
   render() {
-    // Calculations...
+    // Dynamically control height
     const bottom = this.props.width >= 1024 ? 76 : 118;
     const css = {
       height: `${this.props.height - bottom}px`,
-      /*border: '4px dashed yellow'*/
     };
+    // Reset scroll position
+    if (this.props.scrollOffset === 0) {
+      const sv = document.getElementsByClassName('scroll-view')[0];
+      if (sv) {
+        sv.scrollTop = 0;
+      }
+    }
+    // Handle scroll change
     const scrollIt = (event) => {
       this.props.onScrollChange(event.currentTarget.scrollTop);
     };

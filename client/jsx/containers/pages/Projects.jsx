@@ -30,7 +30,7 @@ class Projects extends React.Component {
                 url: ['http://myweb.com/','https://itunes.apple.com/app/id853446994'],
                 description: 'Developed Ree sticker app for iOS (currently in version 3 on the Apple Store). Version 3 continues the partnership with the CLC and a growing list of collegiate sports teams, bringing their mascots to life as iOS emoji’s. Designed application architecture, UX, custom keyboards (emoji and alpha-numeric), and custom iMessage app. Maintained code bases in Objective C and Swift. Worked with creative team including artists from Pixar, Marvel, DC Comics, Universal Studies, and Disney.'
               }, {
-                title: 'Realtime Immersion Studies',
+                title: 'Realtime Immersion Studios',
                 years: '2015',
                 type: 'ActionScript 3.0, JavaScript/HTML5, C++, OpenGL, OpenCL',
                 pub: '6+',
