@@ -3,7 +3,7 @@
 @import "./modules/colors";
 @import "./modules/fonts";
 @import "./modules/card";
-@import "./vendor/grid";
+@import "./vendor/bootstrap";
 
 // ------------------
 // MANIFEST:
@@ -15,11 +15,10 @@
 @import "../jsx/components/logo/Logo.scss";
 @import "../jsx/components/menu/Menu.scss";
 @import "../jsx/components/menu/MenuItem.scss";
+@import "../jsx/components/page/Page.scss";
+@import "../jsx/components/scrollview/ScrollView.scss";
 
 /* Containers: */
 @import "../jsx/containers/app/App.scss";
 @import "../jsx/containers/home/Home.scss";
-@import "../jsx/containers/code/Code.scss";
-@import "../jsx/containers/projects/Projects.scss";
-@import "../jsx/containers/pub/Publications.scss";
-@import "../jsx/containers/story/Story.scss";
+@import "../jsx/containers/pages/Story.scss";

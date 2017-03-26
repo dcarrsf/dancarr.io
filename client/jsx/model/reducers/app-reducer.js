@@ -9,22 +9,32 @@ const initialState = {
       selected: true
     }, {
       label: 'Code',
+      labelShort: 'Code',
+      icon: 'pencil',
       route: '/code',
       selected: false,
     }, {
       label: 'Projects',
+      labelShort: 'Proj.',
+      icon: 'folder-open',
       route: '/projects',
       selected: false,
     }, {
       label: 'Publications',
+      labelShort: 'Pub.',
+      icon: 'bookmark',
       route: '/publications',
       selected: false,
     }, {
       label: 'Story',
+      labelShort: 'Story',
+      icon: 'leaf',
       route: '/story',
       selected: false,
     }
   ],
+  width: 0,
+  height: 0,
   scrollOffset: 0,
   selectedIndex: 0,
 };
@@ -52,6 +62,8 @@ const appReducer = function (state = initialState, action) {
       });
     case types.SCROLL:
       return Object.assign({}, state, { scrollOffset: action.position });
+    case types.RESIZE:
+      return Object.assign({}, state, { width: action.width, height: action.height });
     default: break;
   }
   return state;

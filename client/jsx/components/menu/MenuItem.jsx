@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const MenuItem = ({ label, route, selected }) => {
-  const cls = selected ? 'active' : 'normal';
+const MenuItem = ({ label, labelShort, icon, width, route, selected }) => {
+  const cls1 = selected ? 'menu-item active-item' : 'menu-item normal-item';
+  const cls2 = selected ? 'active' : 'normal';
+  const iconCls = `glyphicon glyphicon-${icon}`;
+  const lbl = width >= 768 ? label : labelShort;
   return (
-    <li className="menu-item">
-      <Link className={cls} to={route}>{label}</Link>
+    <li className={cls1}>
+      <span className={iconCls}></span>
+      <Link className={cls2} to={route}>{lbl}</Link>
     </li>
   );
 };

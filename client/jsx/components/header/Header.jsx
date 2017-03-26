@@ -14,7 +14,7 @@ class Header extends React.Component {
     }
     return (
       <header className='header' style={css}>
-        <Menu items={this.props.items} selectedIndex={this.props.selectedIndex}/>
+        <Menu items={this.props.items} width={this.props.width} selectedIndex={this.props.selectedIndex}/>
       </header>
     );
   }

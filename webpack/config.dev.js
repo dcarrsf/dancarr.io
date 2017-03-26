@@ -40,7 +40,10 @@ module.exports = {
       }, {
           test: /\.(jpg|png)$/,
           use: 'file-loader?name=../img/[name].[ext]'
-      },{
+      }, {
+          test: /\.(eot|ttf|woff|woff2|svg)$/i,
+          loader: `file-loader?name=/../fonts/[name].[ext]`,
+      }, {
         // Lint JavaScript (Airbnb Style Guide)
         test: /\.js$/,
         exclude: /node_modules/,

@@ -7,11 +7,11 @@ class DetailItem extends React.Component {
     return (
         <li className='detail-item'>
             <h3>{this.props.title}</h3>
-            <p>{this.props.description}</p>
-            <p>{this.props.note}</p>
+            <p className='description'>{this.props.description}</p>
+            <p className='note'>{this.props.note}</p>
             <p className='year'>{this.props.years}</p>
-            <div className="line"></div>
             <p className='type'>{`${this.props.pub} ${this.props.type}`}</p>
+            <div className="line"></div>
         </li>
     );
   }

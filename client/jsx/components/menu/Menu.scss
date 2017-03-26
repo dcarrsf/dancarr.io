@@ -1,4 +1,4 @@
-/* -------------- FooBar Component --------------
+/* -------------- Menu Component --------------
 * BLOCK:
 * .menu
 * ELEMENT:
@@ -6,12 +6,24 @@
 * -------------- Variables -------------------
 */
 .menu {
-  margin: 12px 0;
+  position: fixed;
+  bottom: -12px;
+  left: 0;
+  margin: 0px 0;
   padding: 0;
   text-align: center;
   list-style: none;
-  float: right;
-  &:last-child {
-     padding: 0px 44px;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+
+  @media screen and (min-width: 1024px) {
+    background-color:rgba(255, 255, 255, 0);
+    width: 55%;
+    float: right;
+    position: relative;
+    margin: 10px 0;
+    bottom: 0px;
+    text-align: right;
   }
 }

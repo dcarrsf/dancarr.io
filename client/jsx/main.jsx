@@ -7,10 +7,10 @@ import { syncHistoryWithStore } from 'react-router-redux';
 // App component
 import App from './containers/app/App';
 import Home from './containers/home/Home';
-import Code from './containers/code/Code';
-import Projects from './containers/projects/Projects';
-import Publications from './containers/pub/Publications';
-import Story from './containers/story/Story';
+import Code from './containers/pages/Code';
+import Projects from './containers/pages/Projects';
+import Publications from './containers/pages/Publications';
+import Story from './containers/pages/Story';
 
 // Redux store
 import store from './model/store.js';

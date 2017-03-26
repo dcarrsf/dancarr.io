@@ -1,14 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Details from '../../components/details/Details';
-import getScrollChangeAction from '../../model/actions/creators/app-actions';
+import Page from '../../components/page/Page';
 
 class Publications extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             title: 'PUBLICATIONS',
-            description: '',
             details: [
               /*{
                 title: 'Medium',
@@ -74,16 +72,8 @@ class Publications extends React.Component {
   render() {
     // Calculations...
     return(
-      <main className='publications container-fluid'>
-        <div className='row'>
-          <div className='col-xs-5'>
-            <h2>{this.state.title}</h2>
-            <p>{this.state.description}</p>
-          </div>
-          <div className='col-xs-7'>
-           <Details details={this.state.details} scrollHandler={this.props.onScrollChange}/>
-          </div>
-        </div>
+      <main className='page container-fluid'>
+        <Page {...this.state} {...this.props} />
       </main>
     )
   }
@@ -92,16 +82,9 @@ class Publications extends React.Component {
 // Redux props (bindings)
 const mapStateToProps = function(store) {
   return {
-    scrollOffset: store.appState.scrollOffset,
+    width: store.appState.width,
+    height: store.appState.height,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onScrollChange: (position) => {
-      dispatch(getScrollChangeAction(position));
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Publications);
+export default connect(mapStateToProps)(Publications);

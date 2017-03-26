@@ -6,8 +6,14 @@
 * -------------- Variables -------------------
 */
 .logo {
-  margin: 10px 20px;
   float: left;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400;
+    padding: 0 0 0 10px;
+    margin: 0;
+  }
 
   /* Link -> a (react-router) */
   a {
@@ -19,6 +25,10 @@
     &:hover {
       color: white;
     }
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 10px 20px;
   }
 
   /* Selected */

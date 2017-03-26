@@ -1,14 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Details from '../../components/details/Details';
-import getScrollChangeAction from '../../model/actions/creators/app-actions';
+import Page from '../../components/page/Page';
 
 class Story extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             title: 'STORY',
-            description: '',
             details: [
               {
                 title: 'Codesmith',
@@ -47,17 +45,8 @@ class Story extends React.Component {
   render() {
     // Calculations...
     return(
-      <section className='story container-fluid'>
-        <div className='row'>
-          <div className='col-xs-4'>
-            <h2>{this.state.title}</h2>
-            <p>{this.state.description}</p>
-            <div className='headshot'></div>
-          </div>
-          <div className='col-xs-8'>
-           <Details details={this.state.details} scrollHandler={this.props.onScrollChange}/>
-          </div>
-        </div>
+      <section className='story page container-fluid'>
+        <Page {...this.state} {...this.props} />
       </section>
     )
   }
@@ -66,16 +55,9 @@ class Story extends React.Component {
 // Redux props (bindings)
 const mapStateToProps = function(store) {
   return {
-    scrollOffset: store.appState.scrollOffset,
+    width: store.appState.width,
+    height: store.appState.height,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onScrollChange: (position) => {
-      dispatch(getScrollChangeAction(position));
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Story);
+export default connect(mapStateToProps)(Story);

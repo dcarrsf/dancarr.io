@@ -10,54 +10,95 @@
 .detail-item {
   display: inline-block;
   width: 100%;
-  margin-right: 0px;
+  margin-bottom: 40px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  padding:30px 50px 30px 30px;
   cursor: pointer;
-  border-right: 2px dashed lightgray;
   position: relative;
-  max-width: 750px;
+
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
 
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    border-right: 3px dashed lightgray;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px;
+  }
+
   h3 {
     font-family: $h-font;
-    font-size: 36px;
+    font-size: 24px;
     color: lightgray;
+    color:#FFAF6A;
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+      width: 380px;
+    }
   }
 
   p {
     font-family: $p-font;
-    font-size: 21px;
+    font-size: 16px;
     color: white;
   }
 
+  .description ,
+  .note {
+    font-size: 16px;
+    font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
   .year {
+    display: none;
     position: absolute;
-    left: 30px;
-    width: 300px;
-    top: -20px;
-    font-size: 36px;
+    right: -130px;
+    width: 100px;
+    top: 30%;
+    font-size: 24px;
     line-height: 30px;
     color:#FFAF6A;
+    text-align: left;
     /*transform: rotate(90deg);*/
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
   .line {
+    display: none;
     position: absolute;
     right: -20px;
     top: 0;
     color:white;
     width: 40px;
-    height: 2px;
-    border-top: 2px dashed lightgray;
+    height: 1px;
+    border-top: 3px dashed lightgray;
     /*transform: rotate(90deg);*/
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
   
   .type {
     color: lightgray;
+    font-size: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 19px;
+    }
   }
 
   /* Selected */

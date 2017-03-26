@@ -1,27 +1,25 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Details from '../../components/details/Details';
-import getScrollChangeAction from '../../model/actions/creators/app-actions';
+import Page from '../../components/page/Page';
 
 class Projects extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             title: 'PROJECTS',
-            description: '',
             details: [
               {
                 title: 'T. Rowe Price',
                 years: '2017',
                 type: 'AWS, AngularJS, ES6, SASS, Boostrap, Webpack 2',
-                pub: '1',
+                pub: '',
                 url: ['https://www.grove.com/'],
                 description: 'Designed, developed, and deployed the Team Tools Webkit for T. Rowe Price. Partnering with The Grove Consultants International in San Francisco, the webkit provides tools and exercises for team growth. The single page app was built with AngularJS and Webpack 2, deployed to Amazon Web Services as a Static Website utilizing the CloudFront CDN and integrated TRP authentication services.'
               }, {
                 title: 'Philips',
                 years: '2016',
                 type: 'AngularJS, SASS, Boostrap, Gulp',
-                pub: '1',
+                pub: '',
                 url: ['https://www.grove.com/'],
                 description: 'Designed and developed the Team Tools Webkit for the Philips intranet. Partnering with The Grove, the webkit provides best practices for team development, and templates used by the Philips team to create custom content. The single page app was built with AngularJS and Bootstrap. This version of the webkit was refined with a new responsive design layout targeting all screen sizes.'
               }, {
@@ -103,16 +101,8 @@ class Projects extends React.Component {
   render() {
     // Calculations...
     return(
-      <main className='projects container-fluid'>
-        <div className='row'>
-          <div className='col-xs-5'>
-            <h2>{this.state.title}</h2>
-            <p>{this.state.description}</p>
-          </div>
-          <div className='col-xs-7'>
-           <Details details={this.state.details} scrollHandler={this.props.onScrollChange}/>
-          </div>
-        </div>
+      <main className='page container-fluid'>
+        <Page {...this.state} {...this.props} />
       </main>
     )
   }
@@ -121,16 +111,9 @@ class Projects extends React.Component {
 // Redux props (bindings)
 const mapStateToProps = function(store) {
   return {
-    scrollOffset: store.appState.scrollOffset,
+    width: store.appState.width,
+    height: store.appState.height,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onScrollChange: (position) => {
-      dispatch(getScrollChangeAction(position));
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Projects);
+export default connect(mapStateToProps)(Projects);

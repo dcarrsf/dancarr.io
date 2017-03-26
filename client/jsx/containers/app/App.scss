@@ -16,21 +16,10 @@ body {
   background-image: url('./img/dancarr-splash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top left;
-}
+  background-position: -100px top;
+  overflow: hidden;
 
-h1 {
-  font-family: $h-font;
-  letter-spacing: $h-letter-spacing;
-  font-weight: $h-weight;
-  font-size: $h-size;
-  padding-bottom: 20px;
-}
-
-p {
-  font-family: $p-font;
-  letter-spacing: $p-letter-spacing;
-  line-height: $p-line-height;
-  font-weight: $p-weight;
-  font-size: $p-size;
+  @media screen and (min-width: 1024px) {
+    background-position: center top; 
+  }
 }

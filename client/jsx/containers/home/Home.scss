@@ -6,17 +6,18 @@
 * -------------- Variables -------------------
 */
 .home {
-    padding: 350px 30px 0 30px;
+    padding: 150px 30px 0 30px;
     color: white;
 
     h2 {
         font-family: $h-font;
-        font-size: 72px;
-        line-height: 75px;
-        letter-spacing: -8px;
+        font-size: 42px;
+        line-height: 45px;
+        letter-spacing: -4px;
     }
 
     p {
+        display: none;
         margin-top: 20px;
         font-family: $p-font;
         font-size: 19px;
@@ -24,25 +25,34 @@
     }
 
     .email {
+        display: block;
         padding-top: 10px;
         font-family: $h-font;
-        font-size: 28px;
+        font-size: 24px;
         color: #FFAF6A;
-    }
 
-    @media screen and (min-width: $screen-sm-min) {
-        padding-top: 250px;
-    }
-
-    @media screen and (min-width: $screen-md-min) {
-        padding-top: 250px;
-        h2 {
-            font-size: 145px;
-            line-height: 130px;
+        @media screen and (min-width: 768px) {
+           font-size: 32px;
         }
     }
 
-    @media screen and (min-width: $screen-lg-min) {
-        padding-top: 280px;
+    @media screen and (min-width: 768px) {
+        h2 {
+            font-size: 80px;
+            line-height: 90px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        h2 {
+            font-size: 120px;
+            margin: 100px 0px 50px 0px;
+            text-align: left;
+            line-height: 100px;
+            letter-spacing: -6px;
+        }
+        .email {
+            margin-left: 10px;
+        }
     }
 }

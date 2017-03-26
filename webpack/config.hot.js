@@ -41,6 +41,9 @@ module.exports = {
           test: /\.(jpg|png)$/,
           use: 'file-loader?name=img[name].[ext]'
       }, {
+          test: /\.(eot|ttf|woff|woff2|svg)$/i,
+          loader: `file-loader?name=/../fonts/[name].[ext]`,
+      }, {
         test: /\.js$/,
         exclude: /node_modules/,
         enforce: 'pre',

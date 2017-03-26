@@ -13,8 +13,8 @@ class Menu extends React.Component {
       const isSelected = this.props.selectedIndex === i;
       const uniqueKey = `item-${i}`;
       menuItems.push(
-        <MenuItem key={uniqueKey} label={items[i].label}
-                  route={items[i].route} selected={isSelected}/>
+        <MenuItem key={uniqueKey} label={items[i].label} labelShort={items[i].labelShort}
+                  icon={items[i].icon} width={this.props.width} route={items[i].route} selected={isSelected}/>
       );
     }
     return (

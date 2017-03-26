@@ -1,17 +1,17 @@
 import React from 'react';
-import Details from '../../components/details/Details';
+import {connect} from 'react-redux';
+import Page from '../../components/page/Page';
 
 class Code extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             title: 'OPEN-SOURCE',
-            description: '',
             details: [
               {
                 title: 'dancarr.io',
                 type: 'React, Redux, Node, Express, AWS',
-                pub: '1 ',
+                pub: '',
                 years: '2017',
                 url: ['https://www.github.com/dcarrsf/dancarrio'],
                 description: 'After a year of leading curriculum and the engineering team at Codesmith, it was exciting to return to work on the dancarr.io website. The 2015 AngularJS version has been re-invented using React and Node, deployed as a full-stack app on AWS.',
@@ -44,19 +44,19 @@ class Code extends React.Component {
   render() {
     // Calculations...
     return(
-      <main className='code container-fluid'>
-        <div className='row'>
-          <div className='col-xs-5'>
-            <h2>{this.state.title}</h2>
-            <p>{this.state.description}</p>
-          </div>
-          <div className='col-xs-7'>
-           <Details details={this.state.details} />
-          </div>
-        </div>
+      <main className='page container-fluid'>
+        <Page {...this.state} {...this.props} />
       </main>
     )
   }
 }
 
-export default Code;
+// Redux props (bindings)
+const mapStateToProps = function(store) {
+  return {
+    width: store.appState.width,
+    height: store.appState.height,
+  };
+};
+
+export default connect(mapStateToProps)(Code);

@@ -1,0 +1,48 @@
+/* -------------- Page Container --------------
+* BLOCK:
+* .page
+* ELEMENT:
+* MODIFIER:
+* -------------- Variables -------------------
+*/
+.page {
+    color: white;
+    padding-top: 90px;
+    
+    div {
+        border: 1px dashed yellow;
+    }
+
+    h2 {
+        margin-top: 5px;
+        margin-left: 20px;
+        font-family: $h-font;
+        font-size: 34px;
+        line-height: 45px;
+        text-align: left;
+    }
+
+    p {
+        margin-top: 20px;
+        font-family: $p-font;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        h2 {
+            font-size: 56px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        h2 {
+            font-size: 60px;
+            margin: 205px 0px 50px 0px;
+            text-align: left;
+        }
+    }
+}
