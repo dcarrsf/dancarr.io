@@ -14,7 +14,7 @@ class Code extends React.Component {
                 pub: '',
                 years: '2017',
                 icon: 'pencil',
-                url: ['https://www.github.com/dcarrsf/dancarrio'],
+                url: ['https://www.github.com/dcarrsf/dancarr.io'],
                 description: 'After a year of leading curriculum and the engineering team at Codesmith, it was exciting to return to work on the dancarr.io website. The 2015 AngularJS version has been re-invented using React and Node, deployed as a full-stack app on AWS.',
                 note: 'The first phase of the site is available on GitHub as a study in personal portfolio development.'
               }/*, {
