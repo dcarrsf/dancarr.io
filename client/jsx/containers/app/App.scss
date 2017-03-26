@@ -1,0 +1,36 @@
+* {
+  /* Defaults: */
+  margin: 0;
+  padding: 0;
+  transition: all 0.15s ease-out;
+}
+
+html, body,
+#app, .app {
+  height: 100%;
+}
+
+body {
+  font-family: $p-font; 
+  background-color: #3167C1;
+  background-image: url('./img/dancarr-splash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+h1 {
+  font-family: $h-font;
+  letter-spacing: $h-letter-spacing;
+  font-weight: $h-weight;
+  font-size: $h-size;
+  padding-bottom: 20px;
+}
+
+p {
+  font-family: $p-font;
+  letter-spacing: $p-letter-spacing;
+  line-height: $p-line-height;
+  font-weight: $p-weight;
+  font-size: $p-size;
+}

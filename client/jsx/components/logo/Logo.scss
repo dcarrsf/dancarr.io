@@ -1,0 +1,35 @@
+/* -------------- Foo Component --------------
+* BLOCK:
+* .logo
+* ELEMENT:
+* MODIFIER:
+* -------------- Variables -------------------
+*/
+.logo {
+  margin: 10px 20px;
+  float: left;
+
+  /* Link -> a (react-router) */
+  a {
+    font-family: $h-font;
+    font-size: 48px;
+    color: lightgray;
+    user-select: none;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+
+  /* Selected */
+  .active {
+    color: white;
+    font-weight: 700;
+  }
+
+  /* Unselected */
+  .normal {
+    color: lightgray;
+    font-weight: 100;
+  }
+}

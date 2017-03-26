@@ -1,0 +1,46 @@
+/* -------------- Projects Container --------------
+* BLOCK:
+* .projects
+* ELEMENT:
+* MODIFIER:
+* -------------- Variables -------------------
+*/
+.projects {
+    color: white;
+    padding-top: 90px;
+
+    h2 {
+        margin-top: 345px;
+        font-family: $h-font;
+        font-size: 72px;
+        line-height: 75px;
+        text-align: right;
+    }
+
+    p {
+        margin-top: 20px;
+        font-family: $p-font;
+        font-size: 18px;
+        line-height: 24px;
+    }
+/*
+    @media screen and (min-width: $screen-sm-min) {
+        h2 {
+            padding-top: 350px;
+        }
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        h2 {
+            font-size: 85px;
+            line-height: 95px;
+            padding-top: 400px;
+        }
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        h2 {
+            padding-top: 450px;
+        }
+    }*/
+}

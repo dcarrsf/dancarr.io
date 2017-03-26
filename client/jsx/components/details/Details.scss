@@ -1,0 +1,15 @@
+/* -------------- Details Component --------------
+* BLOCK:
+* .details
+* ELEMENT:
+* MODIFIER:
+* -------------- Variables -------------------
+*/
+.details {
+  margin: 0;
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 40px 40px;
+  width: 100%;
+}

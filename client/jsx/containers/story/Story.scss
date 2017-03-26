@@ -1,0 +1,55 @@
+/* -------------- Story Container --------------
+* BLOCK:
+* .story
+* ELEMENT:
+* MODIFIER:
+* -------------- Variables -------------------
+*/
+.story {
+    color: white;
+    padding-top: 90px;
+
+    h2 {
+        margin-top: 345px;
+        font-family: $h-font;
+        font-size: 72px;
+        line-height: 75px;
+        text-align: right;
+    }
+
+    p {
+        margin-top: 20px;
+        font-family: $p-font;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .headshot {
+        position: absolute;
+        right: 2%;
+        bottom: 20%;
+        height: 200px;
+        width: 200px;
+        background-image: url('./img/headshot.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+    /*
+    @media screen and (min-width: $screen-sm-min) {
+        padding-top: 350px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        padding-top: 400px;
+        h2 {
+            font-size: 85px;
+            line-height: 95px;
+        }
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        padding-top: 450px;
+    }*/
+}

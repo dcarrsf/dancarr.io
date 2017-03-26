@@ -1,0 +1,74 @@
+/* -------------- DetailItem Component --------------
+* BLOCK:
+* .detail-item
+* ELEMENT:
+* MODIFIER:
+* .menuItem--active
+* .menuItem--normal
+* -------------- Variables -------------------
+*/
+.detail-item {
+  display: inline-block;
+  width: 100%;
+  margin-right: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding:30px 50px 30px 30px;
+  cursor: pointer;
+  border-right: 2px dashed lightgray;
+  position: relative;
+  max-width: 750px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  h3 {
+    font-family: $h-font;
+    font-size: 36px;
+    color: lightgray;
+  }
+
+  p {
+    font-family: $p-font;
+    font-size: 21px;
+    color: white;
+  }
+
+  .year {
+    position: absolute;
+    left: 30px;
+    width: 300px;
+    top: -20px;
+    font-size: 36px;
+    line-height: 30px;
+    color:#FFAF6A;
+    /*transform: rotate(90deg);*/
+  }
+
+  .line {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    color:white;
+    width: 40px;
+    height: 2px;
+    border-top: 2px dashed lightgray;
+    /*transform: rotate(90deg);*/
+  }
+  
+  .type {
+    color: lightgray;
+  }
+
+  /* Selected */
+  .active {
+    color: white;
+    font-weight: 700;
+  }
+
+  /* Unselected */
+  .normal {
+    color: lightgray;
+    font-weight: 100;
+  }
+}

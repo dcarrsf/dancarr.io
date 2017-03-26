@@ -1,0 +1,17 @@
+/* -------------- FooBar Component --------------
+* BLOCK:
+* .menu
+* ELEMENT:
+* MODIFIER:
+* -------------- Variables -------------------
+*/
+.menu {
+  margin: 12px 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  float: right;
+  &:last-child {
+     padding: 0px 44px;
+  }
+}

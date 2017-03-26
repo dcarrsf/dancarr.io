@@ -1,0 +1,48 @@
+/* -------------- Foo Component --------------
+* BLOCK:
+* .home
+* ELEMENT:
+* MODIFIER:
+* -------------- Variables -------------------
+*/
+.home {
+    padding: 350px 30px 0 30px;
+    color: white;
+
+    h2 {
+        font-family: $h-font;
+        font-size: 72px;
+        line-height: 75px;
+        letter-spacing: -8px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-family: $p-font;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .email {
+        padding-top: 10px;
+        font-family: $h-font;
+        font-size: 28px;
+        color: #FFAF6A;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        padding-top: 250px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        padding-top: 250px;
+        h2 {
+            font-size: 145px;
+            line-height: 130px;
+        }
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        padding-top: 280px;
+    }
+}
