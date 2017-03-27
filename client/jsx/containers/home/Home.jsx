@@ -4,7 +4,7 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: 'SOFTWARE DEVELOPMENT',
+            title: '****SOFTWARE DEVELOPMENT',
             description: 'Lead engineer with extensive experience in component development, JavaScript programming, and application design. Passionate about learning, teaching, and leading initiatives with cutting edge technologies.',
             email: 'dan@dancarr.io',
             // social: 'linkedin.com/in/dancarrsf',

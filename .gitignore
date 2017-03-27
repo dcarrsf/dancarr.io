@@ -1,6 +1,10 @@
 .DS_Store
 node_modules
-build
 
 # Elastic Beanstalk CLI Files
 .elasticbeanstalk/*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
