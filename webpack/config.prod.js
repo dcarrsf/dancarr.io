@@ -48,7 +48,7 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     // Generate the index.html file
     new HtmlWebpackPlugin({
-      title: 'Dan Carr | Software Development & Training',
+      title: 'Dan Carr | Senior Software Engineer',
       template: '../static/index.ejs',
       filename: '../index.html'
     }),
