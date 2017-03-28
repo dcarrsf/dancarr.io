@@ -34,5 +34,5 @@ render(
       </Route>
     </Router>
   </Provider>,
-  document.getElementById('app1')
+  document.getElementById('app')
 );
