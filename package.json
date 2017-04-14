@@ -8,9 +8,9 @@
     "start:dev": "npm run dev && NODE_ENV=development node app.js",
     "start:prod": "npm run build && NODE_ENV=production node app.js",
     "dev": "webpack --config ./webpack/config.dev.js --progress --colors",
-    "build": "webpack --config ./webpack/config.prod.js --progress --colors",
+    "build": "webpack --config ./webpack/config.prod.js --progress --colors --optimize-minimize",
     "test": "tape -r ./test/_helpers/jsdom.js ./test/**/*.js | faucet",
-    "watch": "tape-watch ./test/**/*.js | faucet"
+    "test:watch": "tape-watch ./test/**/*.js | faucet"
   },
   "keywords": [
     "AWS",

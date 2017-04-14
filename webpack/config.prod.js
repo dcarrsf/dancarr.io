@@ -56,7 +56,5 @@ module.exports = {
       template: '../static/index.ejs',
       filename: '../index.html'
     }),
-    // Minimize the bundle
-    new webpack.optimize.UglifyJsPlugin()
   ],
 };
