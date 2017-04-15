@@ -8,14 +8,7 @@ class Publications extends React.Component {
         this.state = {
             title: 'PUBLICATIONS',
             details: [
-              /*{
-                title: 'Medium',
-                type: 'articles',
-                pub: '0',
-                years: '2017',
-                icon: 'link',
-                description: '2016 was a blur of teaching and learning, with many discoveries to share. Check out the start of Dan’s new article series on Medium, supporting his design-patterns.io project. The first article looks at the origin of object oriented design patterns and where they fit in with today\'s JavaScript world.'
-              }, */{
+              {
                 title: 'Adobe Create Magazine',
                 type: 'article',
                 pub: '1',
