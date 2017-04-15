@@ -2,31 +2,26 @@ import React from 'react';
 import MenuItem from './MenuItem';
 import Logo from '../logo/Logo';
 
-class Menu extends React.Component {
-  // Lifecycle methods...
-  render() {
-    // Calculations...
-    const items = this.props.items;
-    const len = items.length;
-    let menuItems = [];
-    for (let i = 1; i < len; i++) {
-      const isSelected = this.props.selectedIndex === i;
-      const uniqueKey = `item-${i}`;
-      menuItems.push(
-        <MenuItem key={uniqueKey} label={items[i].label} labelShort={items[i].labelShort}
-                  icon={items[i].icon} width={this.props.width} route={items[i].route} selected={isSelected}/>
-      );
-    }
-    return (
-      <nav>
-        <Logo label={items[0].label} route={items[0].route} 
-              selected={this.props.selectedIndex === 0} />
-        <ul role="nav" className="menu">
-          {menuItems}
-        </ul>
-      </nav>
+const Menu = ({items, width, selectedIndex}) => {
+  const len = items.length;
+  let menuItems = [];
+  items.forEach((item, i) => {
+    const isSelected = selectedIndex === i;
+    const uniqueKey = `item-${i}`;
+    menuItems.push(
+      <MenuItem key={uniqueKey} label={item.label} labelShort={item.labelShort}
+                icon={item.icon} width={width} route={item.route} selected={isSelected}/>
     );
-  }
+  });
+  return (
+    <nav>
+      <Logo label={items[0].label} route={items[0].route} 
+            selected={selectedIndex === 0} />
+      <ul role="nav" className="menu">
+        {menuItems}
+      </ul>
+    </nav>
+  );
 }
 
 // Validate props
