@@ -1,6 +1,29 @@
 import React from 'react';
 
-class ScrollView extends React.Component {
+const ScrollView = ({width, height, scrollOffset, onScrollChange, children}) => {
+  // Dynamically control height
+  const bottom = width >= 1024 ? 76 : 118;
+  const css = {
+    height: `${height - bottom}px`,
+  };
+  // Reset scroll position
+  if (scrollOffset === 0) {
+    const sv = document.getElementsByClassName('scroll-view')[0];
+    if (sv) sv.scrollTop = 0;
+  }
+  // Handle scroll change
+  const scrollIt = (event) => {
+    onScrollChange(event.currentTarget.scrollTop);
+  };
+  return (
+    <section className='scroll-view' style={css} onScroll={scrollIt}>
+      {/* EMBED ROUTER CHILDREN HERE! */}
+      {children}
+    </section>
+  );
+};
+
+/*class ScrollView extends React.Component {
   // Draw
   render() {
     // Dynamically control height
@@ -21,12 +44,11 @@ class ScrollView extends React.Component {
     };
     return ( 
         <section className='scroll-view' style={css} onScroll={scrollIt}>
-          {/* EMBED ROUTER CHILDREN HERE! */}
           {this.props.children}
         </section>
     );
   }
-}
+}*/
 
 export default ScrollView;
 
