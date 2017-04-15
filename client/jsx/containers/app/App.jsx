@@ -4,6 +4,7 @@ import Header from '../../components/header/Header';
 import ScrollView from '../../components/scrollview/ScrollView';
 import { getScrollChangeAction } from '../../model/actions/creators/app-actions';
 import { getResizeAction } from '../../model/actions/creators/app-actions';
+import debounce from '../../utils/debounce';
 
 class App extends React.Component {
   // Initialize!
@@ -15,7 +16,7 @@ class App extends React.Component {
 
   // Handle resizing
   updateDimensions() {
-    this.props.onSizeChange(window.innerWidth, window.innerHeight)
+    debounce(this.props.onSizeChange(window.innerWidth, window.innerHeight), 100);
   }
 
   // Lifecycle methods...
@@ -53,6 +54,7 @@ const mapStateToProps = function(store) {
   };
 };
 
+// Redux dispatch (action creators)
 const mapDispatchToProps = (dispatch) => {
   return {
     onScrollChange: (position) => {
@@ -64,4 +66,5 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
+// Connect bindings to Redux
 export default connect(mapStateToProps, mapDispatchToProps)(App);
