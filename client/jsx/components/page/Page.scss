@@ -11,7 +11,7 @@
     position: relative;
     
     div {
-        /*border: 1px dashed yellow;*/
+        border: 2px dashed gray;
     }
 
     h2 {
@@ -40,14 +40,14 @@
 
     @media screen and (min-width: 1024px) {
         h2 {
-            margin-left: 40px;
+            /*margin-left: 40px;*/
         }
     }
 
     @media screen and (min-width: 1200px) {
         h2 {
             font-size: 48px;
-            margin: 205px 0px 50px 0px;
+            margin: 205px 20px 50px 0px;
             text-align: right;
         }
     }
