@@ -13,8 +13,7 @@ const Header = ({logo, menu, width, scrollOffset, selectedIndex}) => {
     <header className="header" style={css}>
       <nav>
         <i className="fa fa-navicon navicon" aria-hidden="true"></i>
-        <Logo label={logo.label} route={logo.route} 
-              selected={selectedIndex === -1} />
+        <Logo label={logo.label} route={logo.route} selected={selectedIndex === -1} />
         <Menu items={menu} width={width} selectedIndex={selectedIndex}/>
       </nav>
     </header>

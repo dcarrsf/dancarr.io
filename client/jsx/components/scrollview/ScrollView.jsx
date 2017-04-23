@@ -3,7 +3,7 @@ import debounce from '../../utils/debounce';
 
 const ScrollView = ({width, height, scrollOffset, onScrollChange, children}) => {
   // Dynamically control height
-  const bottom = width >= 1024 ? 76 : 118;
+  const bottom = width >= 1024 ? 76 : 50;
   const css = {
     height: `${height - bottom}px`,
   };
