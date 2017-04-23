@@ -13,4 +13,9 @@
   margin: 10px 0;
   bottom: 0px;
   text-align: right;
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: inline-block;
+  }
 }
