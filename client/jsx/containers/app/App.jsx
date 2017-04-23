@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Header from '../../components/header/Header';
 import ScrollView from '../../components/scrollview/ScrollView';
+import Sidebar from '../../components/sidebar/Sidebar';
 import { getScrollChangeAction } from '../../model/actions/creators/app-actions';
 import { getResizeAction } from '../../model/actions/creators/app-actions';
 import debounce from '../../utils/debounce';
@@ -38,6 +39,7 @@ class App extends React.Component {
       <div className='app'>
         <Header {...this.props} />
         <ScrollView {...this.props} />
+        <Sidebar {...this.props} />
       </div>
     )
   }

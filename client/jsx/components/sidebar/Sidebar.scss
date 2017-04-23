@@ -1,56 +1,77 @@
-/* -------------- Page Container --------------
+/* -------------- Sidebar Container --------------
 * BLOCK:
-* .page
+* .sidebar
 * ELEMENT:
 * MODIFIER:
 * -------------- Variables -------------------
 */
-.page {
+.sidebar {
     color: white;
-    padding-top: 90px;
-    position: relative;
+    background-color: #303336;
+    height: 100%;
+    width: 100%;
+    max-width: 350px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+   &__top {
+       height: 100px;
+       background-color: $color-darkblue;
+   }
+
+   &__main {
+       height: 100px;
+       padding: 20px;
+           text-align: center;
+
+       h4 {
+           color: white;
+           font-size: 24px;
+           font-weight: 400;
+       }
+
+       p {
+           margin: 10px 0;
+       }
+   }
+
+   &__profile {
+       width: 120px;
+       height: 120px;
+       background-image: url('img/dancarr-o.png');
+       background-repeat: no-repeat;
+       background-size: contain;
+       margin: -80px auto 0 auto;
+   }
     
-    div {
-        border: 2px dashed gray;
-    }
+   &__button {
+       display: block;
+       width: 100px;
+       height: 32px;
+       background-color: $color-darkblue;
+       border-radius: 3px;
+       color: white;
+       font-weight: 600;
+       text-align: center;
+       padding: 6px 0;
+       margin: 20px auto;
+       &:hover {
+           background-color: $color-blue;
+       }
+   }
 
-    h2 {
-        margin: 5px 20px 20px 20px;
-        font-family: $h-font;
-        font-size: 34px;
-        line-height: 45px;
-        text-align: left;
-    }
-
-    p {
-        margin-top: 20px;
-        font-family: $p-font;
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    @media screen and (min-width: 768px) {
-        h2 {
-            font-size: 56px;
-            margin-bottom: 50px;
-            margin-left: 20px;
-            text-align: left;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        h2 {
-            margin-left: 40px;
-        }
-    }
-
-    @media screen and (min-width: 1200px) {
-        h2 {
-            font-size: 48px;
-            margin: 205px 20px 50px 0px;
-            text-align: right;
-        }
-    }
+   &__linkedin {
+       width: 60px;
+       height: 24px;
+       background-image: url('img/Logo-White-28px-R.png');
+       background-repeat: no-repeat;
+       background-size: contain;
+       margin: 0 auto;
+   }
 /*
     @media screen and (min-width: 1600px) {
         h2 {
