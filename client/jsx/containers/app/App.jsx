@@ -46,7 +46,8 @@ class App extends React.Component {
 // Redux props (bindings)
 const mapStateToProps = function(store) {
   return {
-    items: store.appState.items,
+    logo: store.appState.logo,
+    menu: store.appState.menu,
     width: store.appState.width,
     height: store.appState.height,
     scrollOffset: store.appState.scrollOffset,

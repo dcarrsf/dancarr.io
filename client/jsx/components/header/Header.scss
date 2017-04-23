@@ -13,6 +13,15 @@
     height: 50px;
     margin: 0;
     z-index: 100000;
+    border: 1px dashed white;
+
+    .navicon {
+        color:white;
+        font-size: 24px;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+    }
 
     @media screen and (min-width: 1024px) {
         height: 75px;

@@ -2,12 +2,13 @@ import * as types from '../actions/action-types';
 
 // Default State
 const initialState = {
-  items: [
+  logo: {
+    label: 'DAN CARR',
+    route: '/',
+    selected: true
+  },
+  menu: [
     {
-      label: 'DAN CARR',
-      route: '/',
-      selected: true
-    }, {
       label: 'Code',
       labelShort: 'Code',
       icon: 'pencil',
@@ -41,10 +42,13 @@ const initialState = {
 
 // Helpers
 function getIndex(route) {
-  const items = initialState.items;
+  if (route === '/') {
+    return -1;
+  }
+  const items = initialState.menu;
   const length = items.length;
-  let index = 0;
-  for (let i = 1; i < length; ++i) {
+  let index = -1;
+  for (let i = 0; i < length; ++i) {
     if (items[i].route === route) {
       index = i;
       break;

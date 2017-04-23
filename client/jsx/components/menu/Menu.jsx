@@ -1,28 +1,21 @@
 import React from 'react';
 import MenuItem from './MenuItem';
-import Logo from '../logo/Logo';
 
 const Menu = ({items, width, selectedIndex}) => {
   const len = items.length;
   let menuItems = [];
   items.forEach((item, i) => {
-    if (i > 0) {
-      const isSelected = selectedIndex === i;
-      const uniqueKey = `item-${i}`;
-      menuItems.push(
-        <MenuItem key={uniqueKey} label={item.label} labelShort={item.labelShort}
-                  icon={item.icon} width={width} route={item.route} selected={isSelected}/>
-      );
-    }
+    const isSelected = selectedIndex === i;
+    const uniqueKey = `item-${i}`;
+    menuItems.push(
+      <MenuItem key={uniqueKey} label={item.label} labelShort={item.labelShort}
+                icon={item.icon} width={width} route={item.route} selected={isSelected}/>
+    );
   });
   return (
-    <nav>
-      <Logo label={items[0].label} route={items[0].route} 
-            selected={selectedIndex === 0} />
-      <ul role="nav" className="menu">
-        {menuItems}
-      </ul>
-    </nav>
+    <ul role="nav" className="menu">
+      {menuItems}
+    </ul>
   );
 }
 
