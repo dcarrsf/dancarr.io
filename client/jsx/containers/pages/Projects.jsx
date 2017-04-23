@@ -13,15 +13,15 @@ class Projects extends React.Component {
                 years: '2017',
                 type: 'AWS, AngularJS, ES6, SASS, Boostrap, Webpack 2',
                 pub: '',
-                url: ['https://www.grove.com/'],
-                description: 'Designed, developed, and deployed the Team Tools Webkit for T. Rowe Price. Partnering with The Grove Consultants International in San Francisco, the webkit provides tools and exercises for team growth. The single page app was built with AngularJS and Webpack 2, deployed to Amazon Web Services as a Static Website utilizing the CloudFront CDN and integrated TRP authentication services.'
+                url: ['https://www3.troweprice.com/usis/corporate/en/home.html'],
+                description: 'Dan’s team designed, developed, and deployed the Team Tools Webkit for T. Rowe Price. Partnering with The Grove, the webkit provides tools and exercises for team growth within the organization. The single page app was built with AngularJS and Webpack 2, and was deployed to Amazon Web Services as a static app utilizing the CloudFront CDN and integrated TRP authentication services.'
               }, {
                 title: 'Philips',
                 years: '2016',
                 type: 'AngularJS, SASS, Boostrap, Gulp',
                 pub: '',
-                url: ['https://www.grove.com/'],
-                description: 'Designed and developed the Team Tools Webkit for the Philips intranet. Partnering with The Grove, the webkit provides best practices for team development, and templates used by the Philips team to create custom content. The single page app was built with AngularJS and Bootstrap. This version of the webkit was refined with a new responsive design layout targeting all screen sizes.'
+                url: ['http://www.usa.philips.com/'],
+                description: 'Dan designed and developed the Team Tools Webkit for Philips. Partnering with The Grove, the webkit provides best practices for team development, and templates used by the Philips team for further content development. The single page app was built with AngularJS and Bootstrap. This version of the webkit was refined with a responsive design layout targeting all screen sizes, small and large.'
               }, {
                 title: 'Ree 3',
                 years: '2016',
@@ -35,21 +35,21 @@ class Projects extends React.Component {
                 type: 'ActionScript 3.0, JavaScript/HTML5, C++, OpenGL, OpenCL',
                 pub: '6+',
                 url: ['http://www.rtistudios.com/'],
-                description: 'Delivered solutions to support RTi’s cutting edge video technologies. Created GPU video effect plugin in OpenCL, OpenGL, and C++. Built HTML5 and Flash video players for panoramic video presentations. Debugged live and on-demand streaming and progressive video. Developed video players for touch screen. Created video player for RTI Studios website. Packaged video players for distribution to third parties. Authored component documentation and supporting resources.'
+                description: 'Dan delivered solutions to support RTi’s cutting edge video technologies. Created GPU video effect plugin in OpenCL, OpenGL, and C++. Built HTML5 and Flash video players for panoramic video presentations. Debugged live and on-demand streaming and progressive video. Developed video players for touch screens. Created video player for RTI Studios website. Packaged video player components for distribution to third parties. Authored product documentation and supporting resources.'
               }, {
                 title: 'Kayak',
                 years: '2014-2010',
                 type: 'Ad Banners, ActionScript 3.0',
                 pub: '500+',
                 url: ['https://www.kayak.com/', 'https://www.kayak.com/flippy'],
-                description: 'Dan developed 3D animation engine for Kayak’s branded flip board banners. Originally created for the Kayak “Make a Flippy” campaign. Packaged as components to support third-party distribution and ad banner production. Produced banners for Hotwire and Yahoo! Created Kayak marketing banners at common industry sizes. Localized components and marketing banners to 8+ European languages.'
+                description: 'Dan was commissioned to develop a 3D animation engine for Kayak’s branded flip board banners. Originally created for the Kayak “Make a Flippy” campaign. Packaged as components to support third-party distribution and efficient ad banner production. Produced banners for Hotwire and Yahoo! Created Kayak marketing banners at common industry sizes. Localized components and marketing banners to 8+ European languages.'
               }, {
                 title: 'The Grove Consultants International',
                 years: '2014-2009',
                 type: 'ActionScript 3.0, AngularJS, Boostrap',
                 pub: '2+',
                 url: ['https://www.grove.com/'],
-                description: 'Leading web application development and design for The Grove in San Francisco. Interactive Flash project converted to HTML5 using AngularJS. Implemented modern modular JavaScript programming techniques. Web standard updates designed to run on Intranet in IE8 browsers and higher. Worked with The Grove and Gore teams to define specifications and objectives. Supported Gore team during review and launch.'
+                description: 'Dan leads web application development and design for The Grove Consultants International in San Francisco. Projects include interactive Flash projects converted to HTML5 using AngularJS, with web standard updates designed to run on Intranet in IE8 browsers and higher. Worked with The Grove team to define specifications and objectives. Supported clients during review and launch.'
               }, {
                 title: 'Aperian Global',
                 years: '2014-2006',

@@ -15,12 +15,27 @@ class Code extends React.Component {
                 years: '2017',
                 icon: 'pencil',
                 url: ['https://www.github.com/dcarrsf/dancarr.io'],
-                description: 'After a year of leading curriculum and the engineering team at Codesmith, it was exciting to return to work on the dancarr.io website. The 2015 AngularJS version has been re-invented using React and Node, deployed as a full-stack app on AWS.',
-                note: 'The first phase of the site is available on GitHub as a study in personal portfolio development.'
+                description: 'This site serves two purposes; a quick reference for projects and publications, and a real-world playground with React, Node, and AWS. The frontend of the site is available on GitHub showing approaches to component design.'
+              }, {
+                title: 'webpack-2-starters',
+                years: '2017',
+                pub: '',
+                icon: 'pencil',
+                url: ['https://www.github.com/dcarrsf/webpack-2-starters'],
+                type: 'Webpack 2, React, Redux, AngularJS, Typescript',
+                description: 'The webpack-2-starter project was created to help jumpstart coding with JavaScript libraries that require tooling and configuration. The project supplies Webpack templates for common configurations used in application and component development, including environments for development, production, and hot reloading from a custom Node server.'
+              }, {
+                title: 'webapi-design-patterns',
+                years: '2017',
+                pub: '',
+                icon: 'pencil',
+                url: ['https://www.github.com/dcarrsf/webapi-design-patterns'],
+                type: 'Vanilla ES6, Web API',
+                description: 'This mini-project evolved out of a need to move away from jQuery in favor of vanilla web API. jQuery is powerful, but it is heavy and includes many features we do not commonly use. That said, the simplicity and breivity of the jQuery syntax is preferable to the more verbose web API methods. This library provides a simple jQuery-like syntax, built around a minimal core API.'
               }, {
                 title: 'github.com/dcarrsf',
                 years: '',
-                pub: '9+ ',
+                pub: '',
                 icon: 'pencil',
                 url: ['https://www.github.com/dcarrsf'],
                 type: 'React, AngularJS, JavaScript, ActionScript',
