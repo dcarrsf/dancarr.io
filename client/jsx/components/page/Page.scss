@@ -9,10 +9,6 @@
     color: white;
     padding-top: 90px;
     position: relative;
-    
-    div {
-        border: 2px dashed gray;
-    }
 
     h2 {
         margin: 5px 20px 20px 20px;
@@ -51,10 +47,4 @@
             text-align: right;
         }
     }
-/*
-    @media screen and (min-width: 1600px) {
-        h2 {
-            font-size: 65px;
-        }
-    }*/
 }
