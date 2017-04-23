@@ -30,12 +30,13 @@ class Story extends React.Component {
                 url: ['https://www.adobe.com'],
                 description: 'Dan’s work with Macromedia changed the landscape of e-learning component development. Dan worked as software engineer on the Flash, Flex, Dreamweaver, and Authorware teams, with continuous contributions to the e-learning and open-source communities. Developed first of its kind e-learning quiz components, and supported Flash and Flex teams as a dedicated component developer. Contributions released globally, across 13+ languages.'
               }, {
-                title: 'Dan Carr Design',
+                title: 'Freelance',
                 type: 'Software Engineer | Project Manager | UX Designer',
                 pub: '',
-                years: '2017-1999',
+                years: '2017-1996',
                 url: ['http://www.dancarr.io'],
-                description: 'Dan leads development projects and consults on advisory boards for products and events. Recent work includes projects with T. Rowe Price, Philips, and Adobe Systems. Established in San Francisco in the late 90’s, the Dan Carr Design portfolio includes extensive work as a qualified vendor with Johnson and Johnson, Autodesk, Kayak, NATO / US Army, Intel, and Adobe / Macromedia, with scale ranging from pre-release product development to targeted turnkey solutions.'
+                description: 'Dan leads development projects and consults on advisory boards for products and events. Recent work includes projects with T. Rowe Price, Philips, and Adobe Systems. Freelance portfolio includes extensive work as a qualified vendor with Adobe Systems, Johnson and Johnson, Autodesk, Kayak, Aperian Global, The Grove, and others, with scale ranging from pre-release product development to targeted turnkey solutions.',
+                note: 'Dan is currently working on freelance web development contracts while seeking the right full-time opportunity.'
               }
             ]
         }

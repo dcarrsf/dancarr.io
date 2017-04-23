@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Sidebar = ({logo, menu, selectedIndex, sidebarShowing, onSidebarChange}) => {
   const len = menu.length;
@@ -8,7 +9,7 @@ const Sidebar = ({logo, menu, selectedIndex, sidebarShowing, onSidebarChange}) =
     const isSelected = selectedIndex === i;
     const uniqueKey = `item-${i}`;
     menuItems.push(
-      <li key={uniqueKey}><a href={item.route}>{item.label}</a></li>
+      <li key={uniqueKey}><Link to={item.route}>{item.label}</Link></li>
     );
   });
   const cls = sidebarShowing ? 'sidebar sidebar--open' : 'sidebar sidebar--close';
