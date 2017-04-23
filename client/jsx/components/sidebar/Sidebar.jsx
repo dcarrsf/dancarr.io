@@ -11,17 +11,29 @@ const Sidebar = ({logo, menu, selectedIndex}) => {
       <li key={uniqueKey}><a href={item.route}>{item.label}</a></li>
     );
   });
+  const closeMenu = (event) => {
+
+  };
   // Render sidebar
   return (
     <section className='sidebar'>
+      <i className='sidebar__close fa fa-close' onClick={closeMenu}></i>
       <div className='sidebar__top'></div>
       <div className='sidebar__main'>
         <div className='sidebar__profile'></div>
         <h4>Dan Carr</h4>
-        <p>Senior JavaScript Engineer Seeks Application Development and Engineer Management Roles in Los Angeles</p>
-        <a className='sidebar__button'>View Profile</a>
-        <div className='sidebar__linkedin'></div>
-      </div>
+        <p>Senior JavaScript Engineer Seeks Application Development and Engineering Management Roles in Los Angeles</p>
+        <a className='sidebar__button' href='https://www.linkedin.com/in/dcarrsf'>View Profile</a>
+        <a href='https://www.linkedin.com/in/dcarrsf'>
+          <div className='sidebar__linkedin'></div>
+        </a>
+        <hr className='sidebar__rule'/>
+        <div className='sidebar__nav'>
+          <ul>
+            {menuItems}
+          </ul>
+        </div>
+        </div>
     </section>
   );
 }

@@ -18,6 +18,17 @@
     z-index: 900000;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 21px;
+       &:hover {
+           color: lightgray;
+       }
+    }
+
    &__top {
        height: 100px;
        background-color: $color-darkblue;
@@ -26,7 +37,7 @@
    &__main {
        height: 100px;
        padding: 20px;
-           text-align: center;
+        text-align: center;
 
        h4 {
            color: white;
@@ -60,6 +71,8 @@
        padding: 6px 0;
        margin: 20px auto;
        &:hover {
+           color: lightgray;
+           text-decoration: none;
            background-color: $color-blue;
        }
    }
@@ -71,6 +84,29 @@
        background-repeat: no-repeat;
        background-size: contain;
        margin: 0 auto;
+   }
+
+   &__rule {
+       border-color: gray;
+       border-style: dashed;
+       margin: 20px 10px;
+   }
+
+   &__nav {
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 14px;
+            a {
+                color: white;
+                font-size: 18px;
+                &:hover {
+                    color: lightgray;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
    }
 /*
     @media screen and (min-width: 1600px) {
