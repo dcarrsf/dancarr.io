@@ -19,9 +19,14 @@
         color:white;
         font-size: 24px;
         position: absolute;
-        top: 24px;
-        left: 14px;
+        top: 14px;
+        right: 28px;
         cursor: pointer;
+
+        @media screen and (min-width: 1024px) {
+            top: 24px;
+            left: 14px;
+        }
     }
 
     @media screen and (min-width: 1024px) {
