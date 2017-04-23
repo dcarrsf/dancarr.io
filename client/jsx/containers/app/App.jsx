@@ -5,6 +5,7 @@ import ScrollView from '../../components/scrollview/ScrollView';
 import Sidebar from '../../components/sidebar/Sidebar';
 import { getScrollChangeAction } from '../../model/actions/creators/app-actions';
 import { getResizeAction } from '../../model/actions/creators/app-actions';
+import { getMenuAction } from '../../model/actions/creators/app-actions';
 import debounce from '../../utils/debounce';
 
 class App extends React.Component {
@@ -34,7 +35,6 @@ class App extends React.Component {
   }
   // Draw the view...
   render() {
-    // Calculations...
     return(
       <div className='app'>
         <Header {...this.props} />
@@ -54,6 +54,7 @@ const mapStateToProps = function(store) {
     height: store.appState.height,
     scrollOffset: store.appState.scrollOffset,
     selectedIndex: store.appState.selectedIndex,
+    sidebarShowing: store.appState.sidebarShowing,
   };
 };
 
@@ -65,6 +66,9 @@ const mapDispatchToProps = (dispatch) => {
     }, 
     onSizeChange: (width, height) => {
       dispatch(getResizeAction(width, height));
+    }, 
+    onSidebarChange: (sidebarShowing) => {
+      dispatch(getMenuAction(sidebarShowing));
     }
   }
 }

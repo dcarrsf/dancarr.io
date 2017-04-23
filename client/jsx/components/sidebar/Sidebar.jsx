@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sidebar = ({logo, menu, selectedIndex}) => {
+const Sidebar = ({logo, menu, selectedIndex, sidebarShowing, onSidebarChange}) => {
   const len = menu.length;
   const menuItems = [];
   // Build menu
@@ -11,13 +11,14 @@ const Sidebar = ({logo, menu, selectedIndex}) => {
       <li key={uniqueKey}><a href={item.route}>{item.label}</a></li>
     );
   });
-  const closeMenu = (event) => {
-
+  const cls = sidebarShowing ? 'sidebar sidebar--open' : 'sidebar sidebar--close';
+  const onChange = (event) => {
+    onSidebarChange(false);
   };
   // Render sidebar
   return (
-    <section className='sidebar'>
-      <i className='sidebar__close fa fa-close' onClick={closeMenu}></i>
+    <section className={cls}>
+      <i className='sidebar__close fa fa-close' onClick={onChange}></i>
       <div className='sidebar__top'></div>
       <div className='sidebar__main'>
         <div className='sidebar__profile'></div>

@@ -14,7 +14,7 @@
     padding: 0px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     z-index: 900000;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 
@@ -94,24 +94,25 @@
 
    &__nav {
     ul {
-        list-style: none;
-        li {
-            margin-bottom: 14px;
-            a {
-                color: white;
-                font-size: 18px;
-                &:hover {
-                    color: lightgray;
-                    text-decoration: none;
-                }
-            }
+      list-style: none;
+      li {
+        margin-bottom: 14px;
+        a {
+          color: white;
+          font-size: 18px;
+          &:hover {
+            color: lightgray;
+            text-decoration: none;
+          }
         }
+      }
     }
-   }
-/*
-    @media screen and (min-width: 1600px) {
-        h2 {
-            font-size: 65px;
-        }
-    }*/
+  }
+}
+
+.sidebar--open {
+    left: 0;
+}
+.sidebar--close {
+    left: -100%;
 }

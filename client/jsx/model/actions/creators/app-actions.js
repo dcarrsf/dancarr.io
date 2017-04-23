@@ -18,3 +18,10 @@ export function getResizeAction(width, height) {
     height,
   };
 }
+
+export function getMenuAction(sidebarShowing) {
+  return {
+    type: types.SIDEBAR_CHANGE,
+    sidebarShowing,
+  };
+}

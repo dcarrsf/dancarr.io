@@ -38,6 +38,7 @@ const initialState = {
   height: 0,
   scrollOffset: 0,
   selectedIndex: 0,
+  sidebarShowing: false,
 };
 
 // Helpers
@@ -68,6 +69,8 @@ const appReducer = function (state = initialState, action) {
       return Object.assign({}, state, { scrollOffset: action.position });
     case types.RESIZE:
       return Object.assign({}, state, { width: action.width, height: action.height });
+    case types.SIDEBAR_CHANGE:
+      return Object.assign({}, state, { sidebarShowing: action.sidebarShowing });
     default: break;
   }
   return state;
