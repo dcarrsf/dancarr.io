@@ -39,6 +39,9 @@ module.exports = {
       }, {
         test: /\.(jpg|png)$/,
         use: 'file-loader?name=../img/[name].[ext]'
+      }, {
+        test: /\.(pdf)$/,
+        use: 'file-loader?name=../2017/[name].[ext]'
       }
     ],
   },
