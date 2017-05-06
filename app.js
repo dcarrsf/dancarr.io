@@ -50,7 +50,11 @@ if (process.env.NODE_ENV === 'hotreloading') {
 
 // Wildcard routes (defer to client-side routing)
 app.get('*', (req, res) => {
-    res.status(200).sendFile(path.resolve(__dirname, publicPath, 'index.html'));
+    if (req.url.indexOf('.pdf') === -1) {
+        res.status(200).sendFile(path.resolve(__dirname, publicPath, 'index.html'));
+    } else {
+        res.status(200).sendFile(path.resolve(__dirname, publicPath, req.url));
+    }
 });
 
 // =======================
