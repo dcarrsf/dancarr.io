@@ -53,6 +53,8 @@ app.get('*', (req, res) => {
     if (req.url.indexOf('.pdf') === -1) {
         res.status(200).sendFile(path.resolve(__dirname, publicPath, 'index.html'));
     } else {
+        res.header('Content-disposition', 'inline; filename=' + filename);
+        res.header('Content-type', 'application/pdf');
         res.status(200).sendFile(path.resolve(__dirname, publicPath, req.url));
     }
 });
