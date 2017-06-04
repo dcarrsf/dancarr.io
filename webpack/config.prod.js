@@ -60,8 +60,10 @@ module.exports = {
       filename: '../index.html'
     }),
     new webpack.DefinePlugin({
-      PRODUCTION: JSON.stringify(true),
-      NODE_ENV: JSON.stringify("production"),
-    })
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ],
 };
