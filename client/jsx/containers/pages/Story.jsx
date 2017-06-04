@@ -17,7 +17,7 @@ class Story extends React.Component {
                 description: 'Dan spent the past year immersed in the JavaScript tech stack while leading curriculum at Codesmith, an immersive software engineering program located in Los Angeles. As Lead Instructor, Dan developed the advanced portions of the curriculum, and mentored and trained 150+ engineers now actively working in Los Angeles and Northern California. In addition to curriculum, Dan leads website development projects as resident Senior Software Engineer.'
               }, {
                 title: 'Adobe',
-                type: 'Senior Software Engineer | Technical Writer',
+                type: 'Consultant | Author | Community Leader',
                 pub: '',
                 years: '2016-2006',
                 url: ['https://www.adobe.com'],
@@ -31,7 +31,7 @@ class Story extends React.Component {
                 description: 'Dan’s work with Macromedia changed the landscape of e-learning component development. Dan worked as software engineer on the Flash, Flex, Dreamweaver, and Authorware teams, with continuous contributions to the e-learning and open-source communities. Developed first of its kind e-learning quiz components, and supported Flash and Flex teams as a dedicated component developer. Contributions released globally, across 13+ languages.'
               }, {
                 title: 'Freelance',
-                type: 'Software Engineer | Project Manager | UX Designer',
+                type: 'Independent Software Engineer',
                 pub: '',
                 years: '2017-1996',
                 url: ['http://www.dancarr.io'],

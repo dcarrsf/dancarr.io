@@ -6,7 +6,7 @@ class Code extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: 'OPEN-SOURCE',
+            title: 'CODE',
             details: [
               {
                 title: 'dancarr.io',
@@ -24,14 +24,6 @@ class Code extends React.Component {
                 url: ['https://www.github.com/dcarrsf/webpack-2-starters'],
                 type: 'Webpack 2, React, Redux, AngularJS, Typescript',
                 description: 'The webpack-2-starter project was created to help jumpstart coding with JavaScript libraries that require tooling and configuration. The project supplies Webpack templates for common configurations used in application and component development, including environments for development, production, and hot reloading from a custom Node server.'
-              }, {
-                title: 'webapi-design-patterns',
-                years: '2017',
-                pub: '',
-                icon: 'pencil',
-                url: ['https://www.github.com/dcarrsf/webapi-design-patterns'],
-                type: 'Vanilla ES6, Web API',
-                description: 'This mini-project evolved out of a need to move away from jQuery in favor of vanilla web API. jQuery is powerful, but it is heavy and includes many features we do not commonly use. That said, the simplicity and breivity of the jQuery syntax is preferable to the more verbose web API methods. This library provides a simple jQuery-like syntax, built around a minimal core API.'
               }, {
                 title: 'github.com/dcarrsf',
                 years: '',
