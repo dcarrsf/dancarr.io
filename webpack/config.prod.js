@@ -59,5 +59,9 @@ module.exports = {
       template: '../static/index.ejs',
       filename: '../index.html'
     }),
+    new webpack.DefinePlugin({
+      PRODUCTION: JSON.stringify(true),
+      NODE_ENV: JSON.stringify("production"),
+    })
   ],
 };
