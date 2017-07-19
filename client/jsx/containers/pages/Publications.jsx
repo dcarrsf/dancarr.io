@@ -6,7 +6,7 @@ class Publications extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: 'PUBLICATIONS',
+            title: 'PUB.',
             details: [
               {
                 title: 'Adobe Create Magazine',
