@@ -24,7 +24,7 @@ const Sidebar = ({logo, menu, selectedIndex, sidebarShowing, onSidebarChange}) =
       <div className='sidebar__main'>
         <div className='sidebar__profile'></div>
         <h4>Dan Carr</h4>
-        <p>Senior Frontend Engineer currently contracting on the Disney Studios DAM team.</p>
+        <p>Sr. Frontend Engineer currently contracting on the Disney Studios DAM team.</p>
         <a className='sidebar__button' href='https://www.linkedin.com/in/dcarrsf'>View Profile</a>
         <a href='https://www.linkedin.com/in/dcarrsf'>
           <div className='sidebar__linkedin'></div>
