@@ -15,7 +15,7 @@ class Code extends React.Component {
                 years: '2017',
                 icon: 'pencil',
                 url: ['https://www.github.com/dcarrsf/dancarr.io'],
-                description: 'This site serves two purposes; a quick reference for projects and publications, and a real-world playground with React, Node, and AWS. The frontend of the site is available on GitHub showing approaches to component design.'
+                description: 'This site serves two purposes, as a quick reference for projects and publications, and a real-world playground with React, Node, and AWS. The frontend of the site is available on GitHub showing approaches to component design.'
               }, {
                 title: 'dancarrdesign.com',
                 type: 'Angular2+, Typescript, Karma, Jasmine, Webpack 2',
@@ -23,7 +23,7 @@ class Code extends React.Component {
                 years: '2017',
                 icon: 'pencil',
                 url: ['https://www.github.com/dcarrsf/dancarrdesign.com'],
-                description: 'Check out the prototype built with my new Webpack / Angular2+ CLI. THe project implements Angular\'s new component structure, typescript features, and bundling build setup with Webpack.'
+                description: 'Check out the update to dancarrdesign.com built with my new Webpack / Angular2+ CLI prototype. The project implements Angular\'s new component structure and typescript features, along with bundling via Webpack.'
               }, {
                 title: 'webpack-2-starters',
                 years: '2017',
