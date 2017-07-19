@@ -9,6 +9,13 @@ class Story extends React.Component {
             title: 'STORY',
             details: [
               {
+                title: 'Walt Disney Studios',
+                type: 'Senior Frontend Engineer | UX Engineer',
+                pub: '',
+                years: '2017',
+                url: ['http://www.waltdisneystudios.com/'],
+                description: 'Dan is currently working on contract with the Studio DAM team providing UI development for multiple studio web apps. Check back soon for more details as the position develops...'
+              }, {
                 title: 'Codesmith',
                 type: 'Senior Software Engineer | Lead Instructor',
                 pub: '',
@@ -35,8 +42,7 @@ class Story extends React.Component {
                 pub: '',
                 years: '2017-1996',
                 url: ['http://www.dancarr.io'],
-                description: 'Dan leads development projects and consults on advisory boards for products and events. Recent work includes projects with T. Rowe Price, Philips, and Adobe Systems. Freelance portfolio includes extensive work as a qualified vendor with Adobe Systems, Johnson and Johnson, Autodesk, Kayak, Aperian Global, The Grove, and others, with scale ranging from pre-release product development to targeted turnkey solutions.',
-                note: 'Dan is currently working on freelance web development contracts while seeking the right full-time opportunity.'
+                description: 'Dan leads development projects and consults on advisory boards for products and events. Recent work includes projects with T. Rowe Price, Philips, and Adobe Systems. Freelance portfolio includes extensive work as a qualified vendor with Adobe Systems, Johnson and Johnson, Autodesk, Kayak, Aperian Global, The Grove, and others, with scale ranging from pre-release product development to targeted turnkey solutions.'
               }
             ]
         }
