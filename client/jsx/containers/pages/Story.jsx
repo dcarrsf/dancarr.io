@@ -14,7 +14,7 @@ class Story extends React.Component {
                 pub: '',
                 years: '2017',
                 url: ['http://www.waltdisneystudios.com/'],
-                description: 'Dan is currently working on contract with the Studio DAM team providing UI development for multiple studio web apps. Check back soon for more details as the position develops...'
+                description: 'Dan is currently working on contract with the Studio DAM team providing UI development for multiple studio web apps. Check back soon for more details as the position develops.'
               }, {
                 title: 'Codesmith',
                 type: 'Senior Software Engineer | Lead Instructor',
