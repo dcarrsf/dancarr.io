@@ -11,15 +11,15 @@ class Publications extends React.Component {
               {
                 title: 'Adobe Create Magazine',
                 type: 'article',
-                pub: '1',
+                pub: '',
                 years: '2016',
                 icon: 'paperclip',
                 url: 'http://create.adobe.com/2016/2/22/ten_steps_to_building_a_photo_gallery_website_with_adobe_dreamweaver_cc.html',
                 description: 'In 2015 the Adobe Inspire Magazine was retired and rebranded into the Adobe Create Magazine. Dan was invited to contribute new versions of his most popular articles and tutorials in Dreamweaver and Photoshop. Check out the first article on creating a photo gallery website using Bootstrap in Dreamweaver CC.'
               }, {
                 title: 'Pluralsight',
-                type: '5-hour video courses',
-                pub: '2 - ',
+                type: 'video courses (5-hour)',
+                pub: '2 ',
                 years: '2015',
                 icon: 'link',
                 url: 'https://www.pluralsight.com/courses/dreamweaver-cc-responsive-design-bootstrap',
