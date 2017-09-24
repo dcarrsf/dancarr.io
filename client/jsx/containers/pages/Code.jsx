@@ -23,15 +23,15 @@ class Code extends React.Component {
                 years: '2017',
                 icon: 'pencil',
                 url: ['https://www.github.com/dcarrsf/dancarrdesign.com'],
-                description: 'Check out the update to dancarrdesign.com built with my new Webpack / Angular2+ CLI prototype. The project implements Angular\'s new component structure and typescript features, along with bundling via Webpack.'
+                description: 'Check out this prototype of the 2015 dancarrdesign.com website built with my new Webpack / Angular2+ CLI prototype. The project implements Angular\'s new component structure and typescript features, along with bundling via Webpack.'
               }, {
-                title: 'webpack-2-starters',
+                title: 'ngwp-cli',
                 years: '2017',
                 pub: '',
                 icon: 'pencil',
-                url: ['https://www.github.com/dcarrsf/webpack-2-starters'],
-                type: 'Webpack 2, React, Redux, AngularJS, Typescript',
-                description: 'The webpack-2-starter project was created to help jumpstart coding with JavaScript libraries that require tooling and configuration. The project supplies Webpack templates for common configurations used in application and component development, including environments for development, production, and hot reloading from a custom Node server.'
+                url: ['https://github.com/dcarrsf/ngwp-cli'],
+                type: 'Angular2+, Typescript, Karma, Jasmine, Webpack 2',
+                description: 'While preparing to start work at Disney, I kicked off a fun project building a Webpack-driven Angular2+ CLI. The project is based on the original Angular CLI and my explorations in build configurations from earlier this year. It\'s a work-in-progress, but there\'s plenty to see...'
               }, {
                 title: 'github.com/dcarrsf',
                 years: '',
