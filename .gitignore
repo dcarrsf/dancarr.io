@@ -9,3 +9,6 @@ node_modules
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Don't push files to GitHub
+client/static/files
