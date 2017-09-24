@@ -6,9 +6,17 @@ class Publications extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: 'PUB.',
+            title: 'PUBLICATIONS',
             details: [
               {
+                title: 'Apress',
+                type: 'book | Author - Jennifer Harder',
+                pub: '',
+                years: '2017',
+                icon: 'paperclip',
+                url: 'https://www.amazon.com/Enhancing-Adobe-Acrobat-Forms-JavaScript/dp/1484228928/',
+                description: 'Dan provided technical review on Jennifer Harder\'s new book Enhancing Adobe Acrobat DC Forms with JavaScript. The book explores a range of up-to-date approaches you can use to enhance your PDF forms using simple JavaScript techniques.'
+              }, {
                 title: 'Adobe Create Magazine',
                 type: 'article',
                 pub: '',
