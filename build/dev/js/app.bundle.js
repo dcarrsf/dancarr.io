@@ -13547,22 +13547,30 @@ var Code = function (_React$Component) {
         years: '2017',
         icon: 'pencil',
         url: ['https://www.github.com/dcarrsf/dancarr.io'],
-        description: 'This site serves two purposes; a quick reference for projects and publications, and a real-world playground with React, Node, and AWS. The frontend of the site is available on GitHub showing approaches to component design.'
+        description: 'This site serves two purposes, as a quick reference for projects and publications, and a real-world playground with React, Node, and AWS. The frontend of the site is available on GitHub showing approaches to component design.'
       }, {
-        title: 'webpack-2-starters',
+        title: 'dancarrdesign.com',
+        type: 'Angular2+, Typescript, Karma, Jasmine, Webpack 2',
+        pub: '',
+        years: '2017',
+        icon: 'pencil',
+        url: ['https://www.github.com/dcarrsf/dancarrdesign.com'],
+        description: 'Check out this prototype of the 2015 dancarrdesign.com website built with my new Webpack / Angular2+ CLI prototype. The project implements Angular\'s new component structure and typescript features, along with bundling via Webpack.'
+      }, {
+        title: 'ngwp-cli',
         years: '2017',
         pub: '',
         icon: 'pencil',
-        url: ['https://www.github.com/dcarrsf/webpack-2-starters'],
-        type: 'Webpack 2, React, Redux, AngularJS, Typescript',
-        description: 'The webpack-2-starter project was created to help jumpstart coding with JavaScript libraries that require tooling and configuration. The project supplies Webpack templates for common configurations used in application and component development, including environments for development, production, and hot reloading from a custom Node server.'
+        url: ['https://github.com/dcarrsf/ngwp-cli'],
+        type: 'Angular2+, Typescript, Karma, Jasmine, Webpack 2',
+        description: 'While preparing to start work at Disney, I kicked off a fun project building a Webpack-driven Angular2+ CLI. The project is based on the original Angular CLI and my explorations in build configurations from earlier this year. It\'s a work-in-progress, but there\'s plenty to see...'
       }, {
         title: 'github.com/dcarrsf',
         years: '',
         pub: '',
         icon: 'pencil',
         url: ['https://www.github.com/dcarrsf'],
-        type: 'React, AngularJS, JavaScript, ActionScript',
+        type: 'React, Redux, Angular, JavaScript, ActionScript',
         description: 'Check out the dcarrsf repos on GitHub for a mixture of current projects, studies from the previous year’s explorations in JavaScript, and archived open-source ActionScript projects.'
       }]
     };
@@ -13805,17 +13813,25 @@ var Publications = function (_React$Component) {
     _this.state = {
       title: 'PUBLICATIONS',
       details: [{
+        title: 'Apress',
+        type: 'book | Author - Jennifer Harder',
+        pub: '',
+        years: '2017',
+        icon: 'paperclip',
+        url: 'https://www.amazon.com/Enhancing-Adobe-Acrobat-Forms-JavaScript/dp/1484228928/',
+        description: 'Dan provided technical review on Jennifer Harder\'s new book Enhancing Adobe Acrobat DC Forms with JavaScript. The book explores a range of up-to-date approaches you can use to enhance your PDF forms using simple JavaScript techniques.'
+      }, {
         title: 'Adobe Create Magazine',
         type: 'article',
-        pub: '1',
+        pub: '',
         years: '2016',
         icon: 'paperclip',
         url: 'http://create.adobe.com/2016/2/22/ten_steps_to_building_a_photo_gallery_website_with_adobe_dreamweaver_cc.html',
         description: 'In 2015 the Adobe Inspire Magazine was retired and rebranded into the Adobe Create Magazine. Dan was invited to contribute new versions of his most popular articles and tutorials in Dreamweaver and Photoshop. Check out the first article on creating a photo gallery website using Bootstrap in Dreamweaver CC.'
       }, {
         title: 'Pluralsight',
-        type: '5-hour video courses',
-        pub: '2 - ',
+        type: 'video courses (5-hour)',
+        pub: '2 ',
         years: '2015',
         icon: 'link',
         url: 'https://www.pluralsight.com/courses/dreamweaver-cc-responsive-design-bootstrap',
@@ -13946,12 +13962,19 @@ var Story = function (_React$Component) {
     _this.state = {
       title: 'STORY',
       details: [{
+        title: 'The Walt Disney Studios',
+        type: 'Senior Frontend Engineer | UX Engineer',
+        pub: '',
+        years: '2017',
+        url: ['http://www.waltdisneystudios.com/'],
+        description: 'Dan is currently working on contract with the Studio DAM team providing UI development for studio web apps. As UI lead, Dan develops and maintains user facing components built in HTML5, JavaScript, and CSS.'
+      }, {
         title: 'Codesmith',
         type: 'Senior Software Engineer | Lead Instructor',
         pub: '',
         years: '2017-2016',
         url: ['https://www.codesmith.io'],
-        description: 'Dan spent the past year immersed in the JavaScript tech stack while leading curriculum at Codesmith, an immersive software engineering program located in Los Angeles. As Lead Instructor, Dan developed the advanced portions of the curriculum, and mentored and trained 150+ engineers now actively working in Los Angeles and Northern California. In addition to curriculum, Dan leads website development projects as resident Senior Software Engineer.'
+        description: 'Dan spent 2016 immersed in the JavaScript tech stack while leading curriculum at Codesmith, an advanced software engineering program located in Los Angeles. As Lead Instructor, Dan developed the advanced portions of the curriculum, and mentored and trained 150+ engineers now actively working in Los Angeles and Northern California. In addition to curriculum, Dan leads website development projects as resident Senior Software Engineer.'
       }, {
         title: 'Adobe',
         type: 'Consultant | Author | Community Leader',
@@ -13972,8 +13995,7 @@ var Story = function (_React$Component) {
         pub: '',
         years: '2017-1996',
         url: ['http://www.dancarr.io'],
-        description: 'Dan leads development projects and consults on advisory boards for products and events. Recent work includes projects with T. Rowe Price, Philips, and Adobe Systems. Freelance portfolio includes extensive work as a qualified vendor with Adobe Systems, Johnson and Johnson, Autodesk, Kayak, Aperian Global, The Grove, and others, with scale ranging from pre-release product development to targeted turnkey solutions.',
-        note: 'Dan is currently working on freelance web development contracts while seeking the right full-time opportunity.'
+        description: 'Dan leads development projects and consults on advisory boards for products and events. Recent work includes projects with T. Rowe Price, Philips, and Adobe Systems. Freelance portfolio includes extensive work as a qualified vendor with Adobe Systems, Johnson and Johnson, Autodesk, Kayak, Aperian Global, The Grove, and others, with scale ranging from pre-release product development to targeted turnkey solutions.'
       }]
     };
     return _this;
@@ -14536,7 +14558,7 @@ var Sidebar = function Sidebar(_ref) {
       _react2.default.createElement(
         'p',
         null,
-        'Senior Software Engineer Seeks Remote Contracts and Frontend Roles in Los Angeles'
+        'Senior Frontend Engineer contracting on The Walt Disney Studios DAM team.'
       ),
       _react2.default.createElement(
         'a',
