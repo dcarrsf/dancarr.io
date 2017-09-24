@@ -9,19 +9,19 @@ class Story extends React.Component {
             title: 'STORY',
             details: [
               {
-                title: 'Walt Disney Studios',
+                title: 'The Walt Disney Studios',
                 type: 'Senior Frontend Engineer | UX Engineer',
                 pub: '',
                 years: '2017',
                 url: ['http://www.waltdisneystudios.com/'],
-                description: 'Dan is currently working on contract with the Studio DAM team providing UI development for multiple studio web apps (July 2017 - present).'
+                description: 'Dan is currently working on contract with the Studio DAM team providing UI development for studio web apps. As UI lead, Dan develops and maintains user facing components built in HTML5, JavaScript, and CSS.'
               }, {
                 title: 'Codesmith',
                 type: 'Senior Software Engineer | Lead Instructor',
                 pub: '',
                 years: '2017-2016',
                 url: ['https://www.codesmith.io'],
-                description: 'Dan spent the past year immersed in the JavaScript tech stack while leading curriculum at Codesmith, an immersive software engineering program located in Los Angeles. As Lead Instructor, Dan developed the advanced portions of the curriculum, and mentored and trained 150+ engineers now actively working in Los Angeles and Northern California. In addition to curriculum, Dan leads website development projects as resident Senior Software Engineer.'
+                description: 'Dan spent 2016 immersed in the JavaScript tech stack while leading curriculum at Codesmith, an advanced software engineering program located in Los Angeles. As Lead Instructor, Dan developed the advanced portions of the curriculum, and mentored and trained 150+ engineers now actively working in Los Angeles and Northern California. In addition to curriculum, Dan leads website development projects as resident Senior Software Engineer.'
               }, {
                 title: 'Adobe',
                 type: 'Consultant | Author | Community Leader',
